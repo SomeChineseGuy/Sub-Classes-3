@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to this awesome million dollar site!</h1>
+
+  <% for (let meal in meals) { %>
+    <div style="border: 10px tomato solid; max-width: 800px; margin: 10px auto; padding: 0 20px;">
+      <p><%= meals[meal].main %></p> 
+      <p><%= meals[meal].drink %></p> 
+      <p><%= meals[meal].side %></p>
+      <form action="/menu/delete/<%= meal %>" method="POST">
+        <button>Delete</button>
+      </form>
+    </div>
+    
+  <% } %>
+
+  <!-- Forms are usually POST methods -->
+  <form action="/menu/add" method="POST">
+    <label for="">Main:</label>
+    <input type="text" name="main">
+    <label for="">Side:</label>
+    <input type="text" name="side">
+    <label for="">Drink:</label>
+    <input type="text" name="drink">
+    <button>Submit!</button>
+  </form>
+
+
+
+</body>
+</html>

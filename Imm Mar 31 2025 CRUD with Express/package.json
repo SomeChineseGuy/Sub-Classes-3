@@ -1,0 +1,19 @@
+{
+  "name": "imm-mar-31-2025-crud-with-express",
+  "version": "1.0.0",
+  "description": "- [ ] Implement CRUD over HTTP with Express - [ ] Render data for the user using EJS templates - [ ] Use forms to submit HTTP requests - [ ] Explore the Post-Redirect-Get pattern - [ ] Using Chrome DevTools to see requests and responses - [ ] Practice debugging Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
