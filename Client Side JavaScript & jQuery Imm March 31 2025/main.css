@@ -1,0 +1,42 @@
+body {
+  background-color: tomato;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-one {
+  background-color: aqua;
+}
+
+.box-two {
+  background-color: green;
+}
+
+.box-three {
+  background-color: blue;
+}
+
+.box-one,
+.box-three {
+  border: 20px dotted pink;
+}
+
+.box-one:hover {
+  background-color: purple;
+}
+
+.green {
+  color: green;
+}
