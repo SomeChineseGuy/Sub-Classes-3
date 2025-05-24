@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+</head>
+<body>
+  <h1>Can you see this?</h1>
+
+  
+  <!-- This is for writing JS logic -->
+  <!-- if statements, loops -->
+  <!-- if there is an equal sign this means show me the js variable -->
+  
+
+  <% for(let item in db) { %>
+    
+    <div style="border: 10px tomato solid; max-width: 800px; margin: 10px auto; padding: 0 20px;">
+      <p><%= db[item].main %></p>
+      <p><%= db[item].side %></p>
+      <p><%= db[item].drink %></p>
+
+      <form action="/menu/edit/<%= item %>" method="POST">
+        <label for="main">Main</label>
+        <input type="text" name="main">
+        <label for="side">Side</label>
+        <input type="text" name="side">
+        <label for="drink">Drink</label>
+        <input type="text" name="drink">
+
+        <button type="submit">Add</button>
+
+      </form>
+      <form action="/menu/delete/<%= item %>" method="POST">
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+    
+  <% } %>
+  
+  <form action="/menu/add" method="POST">
+    <label for="main">Main</label>
+    <input type="text" name="main">
+    <label for="side">Side</label>
+    <input type="text" name="side">
+    <label for="drink">Drink</label>
+    <input type="text" name="drink">
+
+    <button type="submit">Add</button>
+  </form>
+
+</body>
+</html>
