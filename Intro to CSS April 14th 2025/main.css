@@ -1,0 +1,75 @@
+/* Target an element - selector / selecting an element */
+.container .inner-container .heading {
+  color: hotpink
+}
+
+.container .heading {
+  color: purple;
+}
+
+.heading {
+  font-size: 100px;
+  color: goldenrod;
+  font-weight: 100;
+
+}
+
+.new-text {
+  color: green;
+}
+
+
+#heading {
+  color: black
+}
+
+.flexbox-container {
+  display: flex;
+  /* First thing to learn */
+  /* justify-content: space-between; */
+  /* Second thing to learn */
+  /* align-items: center; */
+  /* Third thing to learn */
+  flex-direction: row;
+  height: 300px;
+}
+
+
+.navbar {
+  display: flex
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.navbar .right {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+
+.cat-image {
+  /* WE want to control the SIZE of the image */
+  /* height: 100px; */
+  /* Box model has 4 parts - the most inner part is call "content" which is height and width */
+  width: 200px;
+  background-color: green;
+  /* Second inner layer is called padding */
+  /* Add padding clockwise */
+  /* top right bottom left */
+  padding: 10px 10px 10px 10px;
+  /* Third layer is border */
+  /* border is a border around the element */
+  /* what  size, type, color,  */
+  border: 10px solid blue;
+  /* The border will control the shape of the content */
+  border-radius: 50%;
+  margin: 20px 20px 20px 20px;
+}
