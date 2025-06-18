@@ -1,0 +1,87 @@
+$mobile-menu-color: darkgreen;
+$brand-color: darkred;
+
+@use "variables";
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid $brand-color;
+  padding: 20px;
+  position: relative;
+
+  .desktop-logo {
+    width: 150px;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+
+  .inner-container {
+    width: 300px;
+    background-color: $mobile-menu-color;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container.active {
+    display: block;
+  }
+
+  .hamburger.hide {
+    display: none;
+  }
+}
+
+/* Breakpoint - once the screen is above or below this size apply this css */
+/* Media Queries - the "if statements of css" */
+/* @media === if  && (max-width: 992px) === condition */
+@media (max-width: 992px) {
+  nav {
+    .desktop-logo {
+      display: none;
+    }
+    .mobile-logo {
+      display: block;
+      width: 150px;
+    }
+    .desktop-menu-container {
+      display: none;
+    }
+
+    .mobile-menu-container {
+      display: block;
+    }
+  }
+}
