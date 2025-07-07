@@ -1,0 +1,24 @@
+<h1>This is the new site!</h1>
+<p>This is a new way to write information for my site</p>
+<h2>Hello how you are ?</h2>
+
+<!-- EJS is a mix between HTML and Javascript -->
+
+<p>Username : <%= username %></p>
+<p>Age: <%= age %></p>
+<p>Password: <%= password %></p>
+<p>New Name <%= moreinfo.newName %></p>
+
+<!-- <% for(let i = 0; i < 10; i++) { %>
+  <p>This is going to show up 10 times. <%= i %> </p>
+<% } %>
+
+ -->
+
+<h1>This is a Form</h1>
+<!-- ALL request is a GET request -->
+<form action="/myname" method="POST">
+  <label for="">Name: </label>
+  <input type="text" name="myname" />
+  <button>Submit</button>
+</form>
