@@ -1,0 +1,35 @@
+body {
+  background-color: aqua;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-one {
+  background-color: pink;
+}
+
+.box-two {
+  background-color: purple;
+}
+
+.box-three {
+  background-color: tomato;
+}
+
+.dog-image {
+  width: 200px;
+}
+
+/* use . for class */
+/* use # for ids */

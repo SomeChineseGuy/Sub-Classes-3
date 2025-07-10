@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX!</title>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="app.js"></script>
+    <script src="post.js"></script>
+  </head>
+  <body>
+    <h1>Fun with Ajax!</h1>
+
+    <section class="box-container">
+      <div class="box box-one">
+        <h1>Box one</h1>
+      </div>
+      <div class="box box-two">
+        <h1>Box two</h1>
+      </div>
+      <div class="box box-three">
+        <h1>Box three</h1>
+      </div>
+    </section>
+
+    <h1>Add new Dog</h1>
+    <form action="" class="dog-form">
+      <label for="dog-name">Dog name:</label>
+      <input type="text" class="dog-name" />
+      <label for="dog-breed">Dog breed:</label>
+      <input type="text" class="dog-breed" />
+      <label for="dog-weight">Dog weight:</label>
+      <input type="text" class="dog-weight" />
+      <button>Add new dog</button>
+    </form>
+
+    <!-- I want to type in a cityy name and get the weather for that city -->
+
+    <h1>Search city</h1>
+    <form class="weather-form" action="/urls">
+      <label for="">City:</label>
+      <input type="text" class="weather-input" />
+      <button>Search</button>
+    </form>
+
+    <section class="results"></section>
+  </body>
+</html>
